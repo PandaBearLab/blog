@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'About';
+const description = 'About your blog.';
+const permalink = `${Astro.site.href}about`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="about">
+  <div class="container">
+    <h1>About</h1>
+    <figure class="about-image">
+      <img src="/assets/about-illustration.webp" alt="Illustration of a notebook" width="330">
+      <!-- <img src="../images/AVTAR_400x400.png" width="330"> -->
+      <figcaption>
+        Illustration by
+        <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6" target="_blank" rel="noopener">Icons 8</a>
+        from
+        <a href="https://icons8.com/illustrations" target="_blank" rel="noopener">Ouch!</a>
+      </figcaption>
+    </figure>
+
+    <p>
+mrbear,35岁， 某厂后端开发， 架构师，
+独立开发， 创业者，思考者， 
+奶爸，
+终身学习者， 中年段子手， 爱讲严肃的段子和冷笑话，
+经常性尬聊，   性格内向， 但总被误会为外向， 
+爱好繁多， 又菜又爱玩， 
+老司机 ， 被裁员， 
+自谋生路。 不是大佬， 最怕被人叫大佬,
+不会黑人的黑客，技术流，
+最大的梦想是想发财。 除了财务其他都自由了，  喜欢阅读与写作 ， 迷信理性。</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>
