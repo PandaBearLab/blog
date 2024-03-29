@@ -1,5 +1,5 @@
 ---
-title: 全网最好的大模型课
+title: 熊先生的大模型课
 publishDate: 28 Mar 2024
 description:  关于Prompt 工程的一系列课程，帮助ai初学者快速学习prompt原理，并能运用这些原理高效率的使用大模型，完成日常的工作
 ---

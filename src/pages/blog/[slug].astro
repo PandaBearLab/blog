@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Bio from '../../components/Bio.astro';
+// import Bio from '../../components/Bio.astro';
 import getPostData from '../../utils/getPostData';
 
 export async function getStaticPaths() {
@@ -28,7 +28,7 @@ const permalink = `${Astro.site.href}blog/${slug}`;
       <Content />
     </article>
     <hr />
-    <Bio />
+    <!-- <Bio /> -->
   </div>
 </BaseLayout>
 
