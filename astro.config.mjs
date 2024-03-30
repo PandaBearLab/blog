@@ -8,6 +8,8 @@ import rehypeExternalLinks from 'rehype-external-links'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ishell.online',
+  title: 'Mr. Bear\'s Blog',
+  Descript: 'Mr. Bear\'s Blog',
   integrations: [mdx(), svelte()],
   markdown: {
     shikiConfig: {
